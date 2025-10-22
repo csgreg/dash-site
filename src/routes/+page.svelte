@@ -66,12 +66,9 @@
 			</div>
 
 			<nav class="flex items-center gap-6">
-				<a href="#features" class="font-medium text-gray-900 transition-colors hover:text-blue-500"
-					>Features</a
-				>
 				<a
 					href="https://apps.apple.com/"
-					class="rounded-3xl bg-primary px-5 py-2.5 font-semibold text-white transition-colors hover:bg-primary-dark"
+					class="rounded-3xl bg-primary px-5 py-2.5 font-light text-white transition-colors hover:bg-primary-dark"
 					target="_blank"
 					rel="noopener">Download App</a
 				>
@@ -84,16 +81,16 @@
 	<div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 md:grid-cols-2">
 		<div class="max-w-xl">
 			<h1 class="mb-6 text-5xl leading-tight font-extrabold text-gray-900 md:text-6xl">
-				Collaborative List Manager for iPhone
+				Keep your lists in one place
 			</h1>
 			<p class="mb-8 text-xl leading-relaxed text-gray-600">
-				Create, share, and manage lists together in real-time. Perfect for shopping lists, team
-				tasks, travel planning, and everything in between.
+				Create, share, and manage lists together in real-time. Perfect for shopping lists, todo
+				list, team tasks, travel planning, and everything in between.
 			</p>
 			<div class="flex gap-4">
 				<a
 					href="https://apps.apple.com/"
-					class="inline-block rounded-xl bg-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-blue-500/30 transition-all hover:-translate-y-0.5 hover:bg-blue-600 hover:shadow-xl hover:shadow-blue-500/40"
+					class="inline-block rounded-4xl bg-secondary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-secondary/30 transition-all hover:-translate-y-0.5 hover:bg-secondary-dark hover:shadow-xl hover:shadow-secondary/40"
 					target="_blank"
 					rel="noopener"
 				>
@@ -104,11 +101,11 @@
 
 		<div class="flex justify-center">
 			<img
-				src="/hero-app-preview.png"
-				alt="ListFlow app interface showing collaborative list management on iPhone"
+				src="/clumsy.svg"
+				alt="Cumsy person"
 				width="600"
 				height="800"
-				class="h-auto max-w-full rounded-3xl shadow-2xl"
+				class="h-auto max-w-full rounded-3xl"
 			/>
 		</div>
 	</div>
