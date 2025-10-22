@@ -1,2 +1,14 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--color-primary: #ff4987;
+	--color-primary-light: #ff6ba0;
+	--color-primary-dark: #e6306f;
+}
+
+* {
+	font-family: 'Titan One', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
