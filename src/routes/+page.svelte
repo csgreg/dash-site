@@ -60,8 +60,8 @@
 <header class="border-b border-gray-200 py-5">
 	<div class="mx-auto max-w-7xl px-6">
 		<div class="flex items-center justify-between">
-			<div class="flex items-center gap-3">
-				<img src="/logo.png" alt="Dash Logo" width="60" height="60" class="block" />
+			<div class="flex items-center gap-1">
+				<img src="/logo.png" alt="Dash Logo" width="60" height="60" class="block object-fill" />
 				<span class="text-2xl font-bold text-gray-900">Dash</span>
 			</div>
 
@@ -86,8 +86,9 @@
 				Keep your lists in one place
 			</h1>
 			<p class="mb-8 text-xl leading-relaxed text-gray-600">
-				Create, share, and manage lists together in real-time. Perfect for shopping lists, todo
-				list, team tasks, travel planning, and everything in between.
+				Stop juggling lists across messages and notes apps. Dash brings all your shared lists
+				together in one beautiful place—perfect for coordinating with friends, family, and
+				colleagues.
 			</p>
 			<div class="flex gap-4">
 				<a
@@ -96,7 +97,7 @@
 					target="_blank"
 					rel="noopener"
 				>
-					Download on the App Store
+					Download from App Store
 				</a>
 			</div>
 		</div>
@@ -115,18 +116,43 @@
 
 <section class="bg-primary py-10 md:py-20">
 	<div
-		class="gap-4 mx-auto flex max-w-7xl flex-col justify-center px-6 md:flex-row md:gap-16 md:pr-20"
+		class="mx-auto flex max-w-7xl flex-col justify-center gap-4 px-6 md:flex-row md:gap-16 md:pr-20"
 	>
 		<h2 class="text-5xl leading-tight font-extrabold text-nowrap text-white md:text-6xl">
 			Our vision
 		</h2>
-		<p class="text-xl text-white">
+		<p class="text-xl leading-relaxed text-white">
 			We believe that everyone should have access to a simple, intuitive, and powerful list manager
 			app. That's why we created Dash, a collaborative list manager app for iOS that allows you to
 			create, share, and manage lists together in real-time.
 		</p>
 	</div>
 </section>
+
+<footer class="border-t border-gray-200 bg-white py-8">
+	<div class="mx-auto max-w-7xl px-6">
+		<div class="flex flex-col items-center justify-between gap-4 md:flex-row">
+			<div class="flex items-center gap-1">
+				<img src="/logo.png" alt="Dash Logo" width="40" height="40" class="block object-fill" />
+			</div>
+
+			<nav class="flex flex-wrap items-center justify-center gap-6 text-sm">
+				<a href="/privacy" class="text-gray-600 transition-colors hover:text-gray-900"
+					>Privacy Policy</a
+				>
+				<a href="/terms" class="text-gray-600 transition-colors hover:text-gray-900"
+					>Terms & Conditions</a
+				>
+				<a
+					href="mailto:contact@dash.app"
+					class="text-gray-600 transition-colors hover:text-gray-900">Contact Us</a
+				>
+			</nav>
+
+			<p class="text-sm text-gray-500">© 2025 Dash. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
 
 <style>
 	.gradient {
