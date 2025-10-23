@@ -35,25 +35,25 @@
 
 	<!-- Structured Data -->
 	<script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "ListFlow",
-      "operatingSystem": "iOS",
-      "applicationCategory": "ProductivityApplication",
-      "url": "https://listflow.app/",
-      "description": "Collaborative list manager app for iOS. Create, share, and manage lists together in real-time.",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "1820"
-      }
-    })}
+		{
+			"@context": "https://schema.org",
+			"@type": "MobileApplication",
+			"name": "ListFlow",
+			"operatingSystem": "iOS",
+			"applicationCategory": "ProductivityApplication",
+			"url": "https://listflow.app/",
+			"description": "Collaborative list manager app for iOS. Create, share, and manage lists together in real-time.",
+			"offers": {
+				"@type": "Offer",
+				"price": "0",
+				"priceCurrency": "USD"
+			},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.8",
+				"reviewCount": "1820"
+			}
+		}
 	</script>
 </svelte:head>
 
@@ -77,9 +77,11 @@
 	</div>
 </header>
 
-<section class="py-20">
-	<div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 md:grid-cols-2">
-		<div class="max-w-xl">
+<section class="py-10 md:py-20">
+	<div
+		class="mx-auto flex max-w-7xl flex-col items-center justify-center gap-16 px-6 md:flex-row md:pr-20"
+	>
+		<div class="gradient z-2 max-w-xl md:pr-20">
 			<h1 class="mb-6 text-5xl leading-tight font-extrabold text-gray-900 md:text-6xl">
 				Keep your lists in one place
 			</h1>
@@ -99,14 +101,35 @@
 			</div>
 		</div>
 
-		<div class="flex justify-center">
+		<div class="z-1 hidden max-h-[370px] justify-center md:ml-[-300px] md:flex">
 			<img
 				src="/clumsy.svg"
 				alt="Cumsy person"
 				width="600"
 				height="800"
-				class="h-auto max-w-full rounded-3xl"
+				class="mr-[-100px] h-auto max-w-full rounded-3xl"
 			/>
 		</div>
 	</div>
 </section>
+
+<section class="bg-primary py-10 md:py-20">
+	<div
+		class="gap-4 mx-auto flex max-w-7xl flex-col justify-center px-6 md:flex-row md:gap-16 md:pr-20"
+	>
+		<h2 class="text-5xl leading-tight font-extrabold text-nowrap text-white md:text-6xl">
+			Our vision
+		</h2>
+		<p class="text-xl text-white">
+			We believe that everyone should have access to a simple, intuitive, and powerful list manager
+			app. That's why we created Dash, a collaborative list manager app for iOS that allows you to
+			create, share, and manage lists together in real-time.
+		</p>
+	</div>
+</section>
+
+<style>
+	.gradient {
+		background: linear-gradient(90deg, white 75%, transparent);
+	}
+</style>
