@@ -102,7 +102,7 @@
 					rel="noopener"
 				>
 					<IconApple />
-					Download from App Store
+					Download for iOS
 				</a>
 			</div>
 		</div>
@@ -131,6 +131,45 @@
 			app. That's why we created Dash, a collaborative list manager app for iOS that allows you to
 			create, share, and manage lists together in real-time.
 		</p>
+	</div>
+</section>
+
+<section class="bg-white py-12 md:py-20">
+	<div class="mx-auto max-w-7xl px-6">
+		<div class="mb-10 text-center md:mb-14">
+			<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">Why Dash</h2>
+			<p class="mt-3 text-lg text-gray-600 md:text-xl">
+				Built to make shared lists effortless, beautiful, and lightning fast.
+			</p>
+		</div>
+
+		<div class="grid gap-8 md:grid-cols-3 md:gap-10">
+			<div class="rounded-3xl border border-gray-100 bg-gray-50 p-6 text-left shadow-sm">
+				<h3 class="mb-3 text-xl font-semibold text-gray-900">Effortless shared lists</h3>
+				<p class="text-base leading-relaxed text-gray-600">
+					Create and manage all your lists in one place&mdash;from everyday to-dos to shared
+					shopping lists and trip planning. Invite others to collaborate so everyone stays on the
+					same page without messy message threads.
+				</p>
+			</div>
+
+			<div class="rounded-3xl border border-gray-100 bg-gray-50 p-6 text-left shadow-sm">
+				<h3 class="mb-3 text-xl font-semibold text-gray-900">Feels native to Apple</h3>
+				<p class="text-base leading-relaxed text-gray-600">
+					Dash is thoughtfully designed to fit right into the Apple ecosystem, with familiar UI,
+					smooth interactions, and support for the latest iOS features so it feels like a natural
+					part of your iPhone.
+				</p>
+			</div>
+
+			<div class="rounded-3xl border border-gray-100 bg-gray-50 p-6 text-left shadow-sm">
+				<h3 class="mb-3 text-xl font-semibold text-gray-900">Instant, real-time sync</h3>
+				<p class="text-base leading-relaxed text-gray-600">
+					Every change you make syncs instantly across all devices and collaborators. Check off an
+					item and everyone sees it update in real time&mdash;no refresh, no delay.
+				</p>
+			</div>
+		</div>
 	</div>
 </section>
 
