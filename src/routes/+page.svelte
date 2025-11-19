@@ -1,3 +1,7 @@
+<script>
+	import IconApple from '$lib/icons/IconApple.svelte';
+</script>
+
 <svelte:head>
 	<title>Dash – Collaborative List Manager App for iOS | Share & Manage Lists Together</title>
 	<meta
@@ -70,7 +74,7 @@
 					href="https://apps.apple.com/"
 					class="rounded-3xl bg-primary px-5 py-2.5 font-light text-white transition-colors hover:bg-primary-dark"
 					target="_blank"
-					rel="noopener">Download App</a
+					rel="noopener">Download</a
 				>
 			</nav>
 		</div>
@@ -93,10 +97,11 @@
 			<div class="flex gap-4">
 				<a
 					href="https://apps.apple.com/"
-					class="inline-block rounded-4xl bg-secondary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-secondary/30 transition-all hover:-translate-y-0.5 hover:bg-secondary-dark hover:shadow-xl hover:shadow-secondary/40"
+					class="inline-flex items-center gap-2 rounded-4xl bg-secondary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-secondary/30 transition-all hover:-translate-y-0.5 hover:bg-secondary-dark hover:shadow-xl hover:shadow-secondary/40"
 					target="_blank"
 					rel="noopener"
 				>
+					<IconApple />
 					Download from App Store
 				</a>
 			</div>
