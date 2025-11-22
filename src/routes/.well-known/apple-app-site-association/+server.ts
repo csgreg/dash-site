@@ -3,7 +3,7 @@ const appleAppSiteAssociation = {
 		apps: [],
 		details: [
 			{
-				appID: '6755497276.com.csgergo.dash',
+				appID: '8VZSVBTHF7.com.csgergo.dash',
 				paths: ['/join/*']
 			}
 		]
