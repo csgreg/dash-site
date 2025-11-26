@@ -5,40 +5,6 @@
 </script>
 
 <svelte:head>
-	<title>Dash – Collaborative List Manager App for iOS | Share & Manage Lists Together</title>
-	<meta
-		name="description"
-		content="Dash is the ultimate collaborative list manager for iPhone. Create, share, and manage lists together in real-time with family, friends, and teams. Download now on the App Store."
-	/>
-	<meta
-		name="keywords"
-		content="iOS list app, collaborative lists, shared to-do lists, iPhone list manager, shared shopping list, team task manager, list sharing app"
-	/>
-	<meta name="author" content="Dash" />
-
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://justdashapp.com/" />
-	<meta property="og:title" content="Dash – Collaborative List Manager App for iOS" />
-	<meta
-		property="og:description"
-		content="Create, share, and manage lists together in real-time. Perfect for shopping, tasks, and team collaboration."
-	/>
-	<meta property="og:image" content="https://justdashapp.app/og-image.jpg" />
-
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:url" content="https://justdashapp.app/" />
-	<meta name="twitter:title" content="Dash – Collaborative List Manager App for iOS" />
-	<meta
-		name="twitter:description"
-		content="Create, share, and manage lists together in real-time. Perfect for shopping, tasks, and team collaboration."
-	/>
-	<meta name="twitter:image" content="https://listflow.app/og-image.jpg" />
-
-	<!-- Canonical URL -->
-	<link rel="canonical" href="https://justdashapp.com/" />
-
 	<!-- Structured Data -->
 	<script type="application/ld+json">
 		{
