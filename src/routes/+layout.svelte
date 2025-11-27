@@ -5,7 +5,7 @@
 	import pngFavicon from '$lib/assets/favicon-96x96.png';
 	import icoFavicon from '$lib/assets/favicon.ico';
 	import appleTouchIcon from '$lib/assets/apple-touch-icon.png';
-	import ogImage from '$lib/assets/ogimage.png';
+	import ogImage from '$lib/assets/ogimage2.png';
 
 	let { children } = $props();
 </script>
