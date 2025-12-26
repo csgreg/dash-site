@@ -34,7 +34,6 @@
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://justdashapp.com/" />
 	<meta property="og:title" content="Dash – Collaborative List Manager App for iOS" />
 	<meta
 		property="og:description"
@@ -43,7 +42,6 @@
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:url" content="https://justdashapp.app/" />
 	<meta name="twitter:title" content="Dash – Collaborative List Manager App for iOS" />
 	<meta
 		name="twitter:description"

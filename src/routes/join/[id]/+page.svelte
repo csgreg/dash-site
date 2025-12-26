@@ -10,13 +10,25 @@
 <svelte:head>
 	<title>Join List - Dash</title>
 	<meta name="description" content="Download Dash to join and collaborate on shared lists" />
+	<meta property="og:url" content={`https://justdashapp.com/join/${data.listId}`} />
+	<meta property="og:title" content="Join a List in Dash" />
+	<meta
+		property="og:description"
+		content="Join a shared list in Dash and collaborate with others in real-time."
+	/>
+	<meta name="twitter:url" content={`https://justdashapp.com/join/${data.listId}`} />
+	<meta name="twitter:title" content="Join a List in Dash" />
+	<meta
+		name="twitter:description"
+		content="Join a shared list in Dash and collaborate with others in real-time."
+	/>
 </svelte:head>
 
 <Header />
 
 <main class="flex min-h-screen flex-col items-center justify-center px-6 py-20">
 	<div class="max-w-2xl text-center">
-		<h1 class="mb-6 text-5xl font-extrabold leading-tight text-gray-900 md:text-6xl">
+		<h1 class="mb-6 text-5xl leading-tight font-extrabold text-gray-900 md:text-6xl">
 			You've been invited to join a list
 		</h1>
 		<p class="mb-8 text-xl leading-relaxed text-gray-600">
