@@ -28,7 +28,7 @@
 
 <main class="flex min-h-screen flex-col items-center justify-center px-6 py-20">
 	<div class="max-w-2xl text-center">
-		<h1 class="mb-6 text-5xl leading-tight font-extrabold text-gray-900 md:text-6xl">
+		<h1 class="mb-6 text-5xl font-extrabold leading-tight text-gray-900 md:text-6xl">
 			You've been invited to join a list
 		</h1>
 		<p class="mb-8 text-xl leading-relaxed text-gray-600">
@@ -37,7 +37,7 @@
 		</p>
 		<a
 			href="https://apps.apple.com/app/apple-store/id6755497276"
-			class="inline-flex items-center gap-2 rounded-4xl bg-secondary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-secondary/30 transition-all hover:-translate-y-0.5 hover:bg-secondary-dark hover:shadow-xl hover:shadow-secondary/40"
+			class="rounded-4xl bg-secondary shadow-secondary/30 hover:bg-secondary-dark hover:shadow-secondary/40 inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
 			target="_blank"
 			rel="noopener"
 		>

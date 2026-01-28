@@ -9,7 +9,7 @@
 			<nav class="flex items-center gap-6">
 				<a
 					href="https://apps.apple.com/app/apple-store/id6755497276"
-					class="rounded-3xl bg-primary px-5 py-2.5 font-light text-white transition-colors hover:bg-primary-dark"
+					class="bg-primary hover:bg-primary-dark rounded-3xl px-5 py-2.5 font-light text-white transition-colors"
 					target="_blank"
 					rel="noopener">Download</a
 				>

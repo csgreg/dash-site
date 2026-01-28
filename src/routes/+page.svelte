@@ -36,7 +36,7 @@
 		class="mx-auto flex max-w-7xl flex-col items-center justify-center gap-16 px-6 md:flex-row md:pr-20"
 	>
 		<div class="gradient z-2 max-w-xl md:pr-20">
-			<h1 class="mb-6 text-5xl leading-tight font-extrabold text-gray-900 md:text-6xl">
+			<h1 class="mb-6 text-5xl font-extrabold leading-tight text-gray-900 md:text-6xl">
 				Keep your lists in one place
 			</h1>
 			<p class="mb-8 text-xl leading-relaxed text-gray-600">
@@ -47,7 +47,7 @@
 			<div class="flex gap-4">
 				<a
 					href="https://apps.apple.com/app/apple-store/id6755497276"
-					class="inline-flex items-center gap-2 rounded-4xl bg-secondary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-secondary/30 transition-all hover:-translate-y-0.5 hover:bg-secondary-dark hover:shadow-xl hover:shadow-secondary/40"
+					class="rounded-4xl bg-secondary shadow-secondary/30 hover:bg-secondary-dark hover:shadow-secondary/40 inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
 					target="_blank"
 					rel="noopener"
 				>
@@ -73,7 +73,7 @@
 	<div
 		class="mx-auto flex max-w-7xl flex-col justify-center gap-4 px-6 md:flex-row md:gap-16 md:pr-20"
 	>
-		<h2 class="text-5xl leading-tight font-extrabold text-nowrap text-white md:text-6xl">
+		<h2 class="text-nowrap text-5xl font-extrabold leading-tight text-white md:text-6xl">
 			Our vision
 		</h2>
 		<p class="text-xl leading-relaxed text-white">
@@ -95,7 +95,7 @@
 
 		<div class="grid gap-6 md:grid-cols-3 md:gap-8">
 			<div
-				class="rounded-4xl bg-gradient-to-br from-secondary to-secondary-dark p-8 text-left shadow-lg shadow-secondary/30"
+				class="rounded-4xl from-secondary to-secondary-dark shadow-secondary/30 bg-gradient-to-br p-8 text-left shadow-lg"
 			>
 				<h3 class="mb-3 text-xl font-bold text-white">Effortless shared lists</h3>
 				<p class="text-base leading-relaxed text-white/90">
@@ -106,7 +106,7 @@
 			</div>
 
 			<div
-				class="rounded-4xl bg-gradient-to-br from-secondary to-secondary-dark p-8 text-left shadow-lg shadow-secondary/30"
+				class="rounded-4xl from-secondary to-secondary-dark shadow-secondary/30 bg-gradient-to-br p-8 text-left shadow-lg"
 			>
 				<h3 class="mb-3 text-xl font-bold text-white">Feels native to Apple</h3>
 				<p class="text-base leading-relaxed text-white/90">
@@ -117,7 +117,7 @@
 			</div>
 
 			<div
-				class="rounded-4xl bg-gradient-to-br from-secondary to-secondary-dark p-8 text-left shadow-lg shadow-secondary/30"
+				class="rounded-4xl from-secondary to-secondary-dark shadow-secondary/30 bg-gradient-to-br p-8 text-left shadow-lg"
 			>
 				<h3 class="mb-3 text-xl font-bold text-white">Instant, real-time sync</h3>
 				<p class="text-base leading-relaxed text-white/90">

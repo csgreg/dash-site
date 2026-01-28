@@ -38,6 +38,7 @@
 					<li>First name (optional, if provided)</li>
 					<li>Lists and items you create</li>
 					<li>Usage statistics (items created, achievements)</li>
+					<li>App analytics data (e.g., app opens, screen views, feature usage)</li>
 					<li>Device information (for app functionality)</li>
 					<li>Feedback submissions (optional email, message, type, timestamp)</li>
 					<li>Authentication data from Apple or Google (when using third-party sign-in)</li>
@@ -79,9 +80,11 @@
 				</p>
 				<div class="mb-4 space-y-4 text-base leading-relaxed text-gray-700">
 					<div>
-						<strong>Firebase (Google):</strong> Authentication, database, and cloud storage
+						<strong>Firebase (Google):</strong> Authentication, database, cloud storage, and
+						analytics
 						<br />
-						• Privacy Policy: <a
+						• Privacy Policy:
+						<a
 							href="https://firebase.google.com/support/privacy"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -92,7 +95,8 @@
 					<div>
 						<strong>Sign in with Apple:</strong> For authentication
 						<br />
-						• Privacy Policy: <a
+						• Privacy Policy:
+						<a
 							href="https://www.apple.com/legal/privacy"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -102,7 +106,8 @@
 					<div>
 						<strong>Google Sign-In:</strong> For authentication
 						<br />
-						• Privacy Policy: <a
+						• Privacy Policy:
+						<a
 							href="https://policies.google.com/privacy"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -113,6 +118,7 @@
 						These services may collect device and usage information as described in their privacy
 						policies.
 					</p>
+					<p>You can disable analytics collection anytime in Profile settings.</p>
 				</div>
 			</section>
 
@@ -127,8 +133,8 @@
 				</p>
 				<ul class="list-inside list-disc space-y-2 text-base text-gray-700">
 					<li>
-						<strong>List Collaborators:</strong> When you share a list, collaborators can view the
-						list name, items, and your user ID (not your email or personal information)
+						<strong>List Collaborators:</strong> When you share a list, collaborators can view the list
+						name, items, and your user ID (not your email or personal information)
 					</li>
 					<li>
 						<strong>Service Providers:</strong> Firebase/Google processes your data to provide cloud
@@ -161,12 +167,12 @@
 					We retain your data as long as your account is active.
 				</p>
 				<p class="mb-4 text-base leading-relaxed text-gray-700">
-					If you delete your account, we will immediately delete your user profile and all lists
-					you created.
+					If you delete your account, we will immediately delete your user profile and all lists you
+					created.
 				</p>
 				<p class="mb-4 text-base leading-relaxed text-gray-700">
-					For shared lists where you're a member (but not the creator), you will be removed from
-					the list but the list itself will remain for other collaborators.
+					For shared lists where you're a member (but not the creator), you will be removed from the
+					list but the list itself will remain for other collaborators.
 				</p>
 			</section>
 
@@ -174,9 +180,8 @@
 			<section>
 				<h2 class="mb-3 text-2xl font-bold text-gray-900">Legal Basis (EU Users)</h2>
 				<p class="mb-4 text-base leading-relaxed text-gray-700">
-					For users in the European Union, we process your data based on your consent (provided
-					when you accept this Privacy Policy) and to fulfill our contract to provide the app
-					service.
+					For users in the European Union, we process your data based on your consent (provided when
+					you accept this Privacy Policy) and to fulfill our contract to provide the app service.
 				</p>
 			</section>
 
