@@ -14,7 +14,7 @@
 	<!-- Content -->
 	<main class="mx-auto max-w-4xl px-6 py-12">
 		<h1 class="mb-4 text-4xl font-extrabold text-gray-900">Privacy Policy</h1>
-		<p class="mb-10 text-sm text-gray-500">Last updated: 30.11.2025</p>
+		<p class="mb-10 text-sm text-gray-500">Last updated: 28.01.2026</p>
 
 		<div class="space-y-8">
 			<!-- Introduction -->
