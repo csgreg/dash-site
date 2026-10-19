@@ -184,6 +184,26 @@ h3 {
 	animation-play-state: paused;
 }
 
+/* The feature story on small screens: the chosen chip fills up as its step plays, and each step's text rises in. */
+@keyframes chip-progress {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+.chip-progress {
+	animation: chip-progress linear both;
+}
+
+@media (max-width: 767px) {
+	.step-in {
+		animation: rise 0.6s var(--ease-out) both;
+	}
+}
+
 /* The FAQ's answers slide open. */
 details::details-content {
 	block-size: 0;

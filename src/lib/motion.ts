@@ -29,3 +29,12 @@ export function atCenter(node: HTMLElement, onCenter: () => void) {
 	observer.observe(node);
 	return { destroy: () => observer.disconnect() };
 }
+
+/** Tells `onChange` whether the element is on screen at all (the feature story plays only while it is). */
+export function whileInView(node: HTMLElement, onChange: (visible: boolean) => void) {
+	const observer = new IntersectionObserver((entries) => {
+		for (const entry of entries) onChange(entry.isIntersecting);
+	});
+	observer.observe(node);
+	return { destroy: () => observer.disconnect() };
+}
