@@ -1,6 +1,6 @@
 {
-	"name": "Dash - List Manager App",
-	"short_name": "Dash",
+	"name": "Yupdo: Shared Lists & Family Chores",
+	"short_name": "Yupdo",
 	"icons": [
 		{
 			"src": "/web-app-manifest-192x192.png",

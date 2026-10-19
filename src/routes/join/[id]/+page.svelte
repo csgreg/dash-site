@@ -1,49 +1,47 @@
+<!--
+	Where an invite link lands when the app is not installed (with the app, iOS opens the list in Yupdo straight
+	away). Kept out of search: there is one per invite.
+-->
 <script lang="ts">
-	import IconApple from '$lib/icons/IconApple.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import Seo from '$lib/components/Seo.svelte';
+	import AppStoreButton from '$lib/components/AppStoreButton.svelte';
+	import { absolute } from '$lib/site';
 	import type { PageData } from './$types';
 
-	export let data: PageData;
+	let { data }: { data: PageData } = $props();
+	const path = $derived(`/join/${encodeURIComponent(data.listId)}`);
 </script>
 
-<svelte:head>
-	<title>Join List - Dash</title>
-	<meta name="description" content="Download Dash to join and collaborate on shared lists" />
-	<meta property="og:url" content={`https://justdashapp.com/join/${data.listId}`} />
-	<meta property="og:title" content="Join a List in Dash" />
-	<meta
-		property="og:description"
-		content="Join a shared list in Dash and collaborate with others in real-time."
-	/>
-	<meta name="twitter:url" content={`https://justdashapp.com/join/${data.listId}`} />
-	<meta name="twitter:title" content="Join a List in Dash" />
-	<meta
-		name="twitter:description"
-		content="Join a shared list in Dash and collaborate with others in real-time."
-	/>
-</svelte:head>
+<Seo
+	title="You're invited to a list on Yupdo"
+	description="Someone shared a list with you on Yupdo. Get the app for iPhone to join it and tick things off together."
+	{path}
+	noindex
+	appArgument={absolute(path)}
+/>
 
 <Header />
 
-<main class="flex min-h-screen flex-col items-center justify-center px-6 py-20">
+<main id="main" class="flex min-h-[70vh] items-center justify-center px-5 py-16">
 	<div class="max-w-2xl text-center">
-		<h1 class="mb-6 text-5xl font-extrabold leading-tight text-gray-900 md:text-6xl">
-			You've been invited to join a list
-		</h1>
-		<p class="mb-8 text-xl leading-relaxed text-gray-600">
-			Download Dash to collaborate on lists with your friends, family, and colleagues. Keep everyone
-			on the same page with real-time updates and seamless sharing.
+		<h1 class="text-5xl leading-tight sm:text-6xl">You're invited to a list</h1>
+		<p class="mt-6 text-xl leading-relaxed text-muted">
+			Someone shared a list with you on Yupdo. Get the app, then open this link again on your iPhone
+			to join it.
 		</p>
-		<a
-			href="https://apps.apple.com/app/apple-store/id6755497276"
-			class="rounded-4xl bg-secondary shadow-secondary/30 hover:bg-secondary-dark hover:shadow-secondary/40 inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
-			target="_blank"
-			rel="noopener"
+		<div class="mt-8 flex justify-center">
+			<AppStoreButton />
+		</div>
+		<p class="mt-10 text-muted">
+			Or, in Yupdo, tap Add, then Join with a code, and type this code:
+		</p>
+		<p
+			class="mx-auto mt-3 inline-block rounded-2xl bg-page px-6 py-3 font-display text-3xl font-black tracking-widest text-ink select-all"
 		>
-			<IconApple />
-			Download for iOS
-		</a>
+			{data.listId}
+		</p>
 	</div>
 </main>
 
