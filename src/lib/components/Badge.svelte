@@ -13,6 +13,8 @@
 		color?: string;
 		/** The little sign on a person's bubble (a tick, a plus). */
 		sign?: string;
+		/** Pops in after this many milliseconds, then bobs (`motion-pop` in app.css); none stays still. */
+		delay?: number;
 		class?: string;
 	};
 	let {
@@ -22,6 +24,7 @@
 		mark = '',
 		color = '#e8447f',
 		sign = '✓',
+		delay,
 		class: className = ''
 	}: Props = $props();
 </script>
@@ -31,8 +34,10 @@
 	class={[
 		'pointer-events-none absolute z-10 flex items-center gap-3 bg-white shadow-xl ring-1 shadow-ink/15 ring-ink/5',
 		kind === 'note' ? 'rounded-3xl px-4 py-3.5' : 'rounded-full py-2 pr-6 pl-2',
+		delay !== undefined && 'motion-pop',
 		className
 	]}
+	style:--d={delay !== undefined ? `${delay}ms` : undefined}
 >
 	{#if kind === 'note'}
 		<svg width="40" height="40" viewBox="0 0 40 40" class="shrink-0">

@@ -1,7 +1,26 @@
-<!-- A screen of the app in an iPhone frame. The screens are 780 x 1696 (design/web in the app's repo). -->
+<!--
+	A screen of the app in an iPhone frame. The screens are 780 x 1696 (design/web in the app's repo). Give `src` for
+	one screen, or children to fill the screen yourself (the feature story's screens that cross-fade).
+-->
 <script lang="ts">
-	type Props = { src: string; alt: string; width?: number; eager?: boolean; class?: string };
-	let { src, alt, width = 280, eager = false, class: className = '' }: Props = $props();
+	import type { Snippet } from 'svelte';
+
+	type Props = {
+		src?: string;
+		alt?: string;
+		width?: number;
+		eager?: boolean;
+		class?: string;
+		children?: Snippet;
+	};
+	let {
+		src,
+		alt = '',
+		width = 280,
+		eager = false,
+		class: className = '',
+		children
+	}: Props = $props();
 </script>
 
 <div
@@ -11,14 +30,20 @@
 	]}
 	style:width={`${width}px`}
 >
-	<img
-		{src}
-		{alt}
-		width="780"
-		height="1696"
-		class="block h-auto w-full rounded-[2.2rem]"
-		loading={eager ? 'eager' : 'lazy'}
-		fetchpriority={eager ? 'high' : 'auto'}
-		decoding="async"
-	/>
+	<div class="relative aspect-[780/1696] overflow-hidden rounded-[2.2rem] bg-page">
+		{#if src}
+			<img
+				{src}
+				{alt}
+				width="780"
+				height="1696"
+				class="block h-full w-full"
+				loading={eager ? 'eager' : 'lazy'}
+				fetchpriority={eager ? 'high' : 'auto'}
+				decoding="async"
+			/>
+		{:else}
+			{@render children?.()}
+		{/if}
+	</div>
 </div>
