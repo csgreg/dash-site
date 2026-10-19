@@ -247,7 +247,7 @@
 		<Ribbon
 			id="hero-ribbon"
 			class="inset-x-0 top-16 h-[640px] w-full opacity-80 md:top-0 md:h-full"
-			path="M-60 680 C 220 720, 400 650, 580 600 S 840 560, 960 400 S 1120 130, 1290 150"
+			path="M-60 620 C 220 660, 400 600, 580 560 S 840 520, 960 380 S 1120 130, 1290 150"
 		/>
 		<div
 			class="relative mx-auto grid max-w-6xl items-center gap-6 px-5 pt-10 pb-14 md:grid-cols-[1.1fr_1fr] md:gap-12 md:pt-16 md:pb-24"

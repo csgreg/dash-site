@@ -84,11 +84,12 @@
 	use:whileInView={(visible) => (inView = visible)}
 	class="relative flex flex-col md:grid md:grid-cols-2 md:gap-16"
 >
-	<!-- The ribbon behind the phone, drawn as the story scrolls by. -->
+	<!-- The ribbon behind the phone, drawn as the story scrolls by. It stays inside its drawing, rounded at both ends
+		(its bends are vertical where they meet, so nothing swings out and gets cut off). -->
 	<svg
 		class="pointer-events-none absolute inset-y-0 right-0 hidden h-full w-1/2 md:block"
 		viewBox="0 0 400 2000"
-		preserveAspectRatio="xMidYMid slice"
+		preserveAspectRatio="xMidYMid meet"
 		fill="none"
 		aria-hidden="true"
 	>
@@ -103,7 +104,7 @@
 		<path
 			class="scroll-draw"
 			pathLength="1"
-			d="M 360 -30 C 40 220, 400 430, 110 660 S 380 1060, 70 1300 S 400 1700, 220 2040"
+			d="M 300 80 C 300 260, 90 300, 90 520 C 90 740, 320 760, 320 980 C 320 1200, 80 1220, 80 1440 C 80 1660, 250 1700, 240 1920"
 			stroke="url(#story-ribbon)"
 			stroke-width="44"
 			stroke-linecap="round"
