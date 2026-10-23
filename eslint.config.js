@@ -24,7 +24,10 @@ export default defineConfig(
 		rules: {
 			// typescript-eslint strongly recommend that you do not use the no-undef lint rule on TypeScript projects.
 			// see: https://typescript-eslint.io/troubleshooting/faqs/eslint/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
-			'no-undef': 'off'
+			'no-undef': 'off',
+			// The site is served from the domain's root (no base path), and most links leave it (the App Store,
+			// mail, Apple's terms), which this rule cannot tell apart from in-site links.
+			'svelte/no-navigation-without-resolve': 'off'
 		}
 	},
 	{

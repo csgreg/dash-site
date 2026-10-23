@@ -1,3 +1,5 @@
-# allow crawling everything by default
+# Everything may be crawled. Invite pages (/join/...) say noindex themselves, so they stay out of search.
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://www.justdashapp.com/sitemap.xml
